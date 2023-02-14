@@ -1,0 +1,38 @@
+.app-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 50px 30px 50px 30px;
+}
+.header {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.description {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.comments-form {
+  display: flex;
+  flex-direction: column;
+}
+.input-bar {
+  font-family: 'Roboto';
+  font-size: 15px;
+  border: 1px solid #94a3b8;
+  font-weight: 600;
+  padding: 8px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+.comments-text {
+  font-family: 'Roboto';
+  font-size: 15px;
+  border: 1px solid #94a3b8;
+  font-weight: 600;
+  padding: 8px;
+  margin-bottom: 10px;
+}
