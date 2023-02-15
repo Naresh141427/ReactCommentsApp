@@ -37,13 +37,11 @@ class Comments extends Component {
   }
 
   deleteComment = id => {
+    const {commentsList} = this.state
+    const filterCommentsList = commentsList.filter(each => each.id !== id)
     this.setState(prevState => ({
-      commentsList: prevState.commentsList.filter(each => {
-        if (each.id !== id) {
-          return each
-        }
-        return ''
-      }),
+      commentsList: filterCommentsList,
+      commentsCount: prevState.commentsCount - 1,
     }))
   }
 
@@ -70,7 +68,7 @@ class Comments extends Component {
       inputText: '',
       comments: '',
       time: '',
-      commentsCount,
+      commentsCount: count,
       isLiked,
     }))
   }
